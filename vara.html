@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Coba Vara JS</title>
+    <link rel="icon" href="img/lope.ico" type="image/icon type">
+    <script src="Vara-master/src/vara.min.js"></script>
+</head>
+<body class="bg1">
+        <!-- salju -->
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+        </div>
+        <!-- akhir salju -->
+        
+        <div id="container"></div>
+        <a href="" class="hidden"></a>
+        
+
+    <!-- bagian audio -->
+    <audio autoplay loop>
+        <source src="dandelion.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+        var fontSize = 72;
+            // cek ukuran windows
+            if (window.screen.width < 700)
+                fontSize = 32;
+            else if (window.screen.width < 1200)
+                fontSize = 56;
+
+            // new objek
+            var vara = new Vara(
+                "#container", "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Satisfy/SatisfySL.json",
+                [
+                    {
+                        text: "Samlekomm...",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        duration: 6000
+                    },
+                    {
+                        text: "Teruntuk...",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Franasya Syafa N.R.",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 9000
+                    },
+                    {
+                        text: "Aliass Ayaang",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Gimana kabarnyaa??",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Pastinyaa ingetkan harii ini hari apa? tanggal berapaa?",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 9000
+                    },
+                    {
+                        text: "Hari kelahiran seorang yang paling cantikk",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Seseorang yang bisa bikin hari-hariku selalu semangatt",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Walaupun kadang juga dibikin stress hehe",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Rabu, 30 Juli 2003",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Let me take you back nineteen years ago",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "People born every day",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "But in this date",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Always makes half of my soul shudder to hear it",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Eventhough you always think that you are nothing",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Just like everyone else in general",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "But for me...",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "You're spesial",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "For all the moments and troubles we've been through",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "And all of the stories we have created",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "I always enjoy our time together",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Even if it's only through whatsapp messages",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "The main thing is",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "I'm always proud of you",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "You are strong, brave and tough",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "I always wish the best for you",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "Maaf kalo aku belom bisa jadi cowok yang sempurna buat kamu",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "And also...",
+                        y: 150,
+                        fromCurrentPosition: { y: false },
+                        delay: 3000,
+                        duration: 6000
+                    },
+                    {
+                        text: "I love you how the way you are",
+                        y: 150,
+                        id: "no_erase",
+                        delay: 9000
+                    },
+                    {
+                        text: "Kalo beberapa gapaham artinya buka dm anjay",
+                        y: 200,
+                        id: "no_erase",
+                        delay: 9000
+                    },
+                    {
+                        text:"",
+                        y: 50,
+                        x: 50,
+                        duration: 4000
+                    },
+                    {
+                        text: "",
+                        color: "#421e82",
+                        id: "github"
+                    }
+                ],
+                {
+                    strokeWidth: 1.5,
+                    color: "#ffff",
+                    fontSize: fontSize,
+                    textAlign: "center"
+                }
+            );
+            vara.ready(function () {
+                var erase = true;
+                vara.animationEnd(function (i, o) {
+                    if (i == "no_erase") erase = false;
+                    if (erase) {
+                        o.container.style.transition = "opacity 1s 1s";
+                        o.container.style.opacity = 0;
+                    }
+                });
+                vara.get("github").container.style.cursor = "pointer";
+                vara.get("github").container.onclick = function () {
+                    document.querySelector("#link").click();
+                };
+            });
+
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
